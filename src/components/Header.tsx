@@ -5,6 +5,7 @@ import DeskNavItems from "./DeskNavItems";
 import { LogoIcon, MenuIcon } from "@/icons";
 import { useState } from "react";
 import MobNavItems from "./MobNavItems";
+import HeaderNotification from "./HeaderNotification";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,9 +15,11 @@ const Header = () => {
   };
 
   return (
-    <header className="pl-6 pr-8 py-2 border-b border-[#E4E4E766] bg-[#FFFFFF99] backdrop-blur-sm relative z-50">
+    <>
+    <HeaderNotification />
+    <header className="pl-6 pr-8 py-1 border-b border-[#E4E4E766] bg-[#FFFFFF99] backdrop-blur-sm relative z-50">
       <nav className="flex items-center justify-between">
-        <div className="flex items-center gap-2 lg:gap-10">
+        <div className="flex items-center gap-2 lg:gap-22">
           {/* Logo */}
           <Link href="/" className="flex">
             <Image src="/logo.svg" alt="Logo" width={50} height={50} />
@@ -34,12 +37,12 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           {/* Header Actions for desktop & tablet */}
-          <div className="hidden sm:flex items-center gap-4">
+          <div className="hidden sm:flex items-center gap-3">
             <Link href="/login" className="text-sm text-primary">
               Login
             </Link>
 
-            <div className="border-[#E4E4E7] border rounded-[5px] flex items-center gap-[10px] px-3 py-1.5 text-sm">
+            <div className="border-[#E4E4E7] border rounded-[5px] flex items-center gap-2.5 px-2 py-1 text-sm">
               <Link href="/start-now" className="text-primary">
                 Start Now
               </Link>
@@ -81,6 +84,7 @@ const Header = () => {
         </div>
       )}
     </header>
+    </>
   );
 };
 
