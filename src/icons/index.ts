@@ -2,4 +2,10 @@ export { default as DropDownIcon } from "./dropDown";
 export { default as LogoIcon } from "./logoIcon";
 export { default as MenuIcon } from "./menu";
 export { default as PlayIcon } from "./play";
-
+export { default as ArrowRightIcon } from "./arrowRight";
+export { default as CrossIcon } from "./cross";
+export { default as ServerIcon1 } from "./server1";
+export { default as ServerIcon2 } from "./server2";
+export { default as ServerIcon3 } from "./server3";
+export { default as ServerIcon4 } from "./server4";
+export { default as ServerIcon5 } from "./server5";

@@ -1,10 +1,13 @@
-import { Header } from "@/components";
+import { Header, Hero, OurServer } from "@/components";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <main>This is the home page of the Next.js app.</main>
+      <main className="wrapper">
+        <Hero />
+        <OurServer/>
+      </main>
     </>
   );
 };

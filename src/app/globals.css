@@ -13,8 +13,11 @@
 }
 
 @theme {
---color-primary: #09090B;
---color-border: 
+  --breakpoint-2xl: 1440px;
+
+  --color-primary: #09090b;
+  --shadow-server-button: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.04);
 }
 
 @layer base {
@@ -29,6 +32,15 @@
 
 @layer components {
   .wrapper {
+    @apply xl:max-w-[1080px] lg:max-w-[960px] md:max-w-[700px] sm:max-w-[580px] max-w-[310px] mx-auto;
+  }
+
+  .grid-item-class {
+    @apply border;
+  }
+
+  .server-button {
+    @apply text-sm font-medium flex gap-1.5 border-[#EBEBEB] border shadow-server-button rounded-[100px] py-[9px]  px-2 lg:px-[13px];
   }
 }
 
