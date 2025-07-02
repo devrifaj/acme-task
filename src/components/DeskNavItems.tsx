@@ -8,21 +8,23 @@ const NavItems = () => {
   const pathname = usePathname();
 
   return (
-    <ul className="hidden lg:flex gap-6">
+    <ul className="hidden lg:flex gap-[23px]">
       {navItems.map((item, index) => {
         const isActive = pathname === item.route;
 
         return (
           <li key={index} className="relative group/item">
+            {/* main nav item link */}
             <Link
               href={item.route}
-              className={`text-sm py-[7.5px] transition-colors duration-200 group flex gap-1 ${
+              className={`text-sm py-[7.5px] transition-colors duration-200 group flex gap-[3px] ${
                 isActive
                   ? "text-[#09090B]"
                   : "text-[#09090B99] hover:text-[#09090B]"
               }`}
             >
               {item.label}
+              {/* dropdown icon */}
               {item.children && item.children.length > 0 && (
                 <span className="group-hover:rotate-180 transition-all">
                   <DropDownIcon />
@@ -37,9 +39,10 @@ const NavItems = () => {
                   const isChildActive = pathname === child.route;
                   return (
                     <li key={childIndex} className="">
+                      {/* dropdown menu link */}
                       <Link
                         href={child.route}
-                        className={`text-sm transition-colors duration-200 ${
+                        className={`text-sm transition-colors duration-200 font-normal ${
                           isChildActive
                             ? "text-[#09090B]"
                             : "text-[#09090B99] hover:text-[#09090B]"

@@ -11,8 +11,10 @@ const PricingCards = () => {
     <div>
       {/* header */}
       <div className="mb-8 sm:mb-12">
-        <h3 className="text-[32px] font-bold pl-4">Our Pricing</h3>
-        <div className="flex sm:flex-row flex-col items-center gap-2 mt-2">
+        <h3 className="text-[32px] font-bold sm:pl-0 pl-4 tracking-[-0.96px] sm:text-left text-center">
+          Our Pricing
+        </h3>
+        <div className="flex sm:flex-row flex-col items-center gap-2 mt-3">
           <Link
             href="#"
             className="py-2.5 px-4.5 text-sm text-white font-medium bg-[#171717] rounded-md"
@@ -31,7 +33,7 @@ const PricingCards = () => {
       </div>
 
       {/* pricing cards */}
-      <div className="flex flex-col gap-3 md:gap-2.5 w-full">
+      <div className="flex flex-col gap-3 md:gap-[19px] w-full">
         {pricingPlans.map((plan) => (
           <div
             key={plan.id}
@@ -44,14 +46,18 @@ const PricingCards = () => {
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center justify-center gap-3 sm:gap-8 md:gap-[46px] lg:gap-7 xl:gap-[46px]">
+                {/* price */}
                 <div className="flex items-baseline gap-1">
                   <span className="text-[20px] sm:text-2xl md:text-[32px] font-bold text-gray-900">
                     ${plan.price}
                   </span>
-                  <span className="text-sm sm:text-base text-[#666666]">/mo</span>
+                  <span className="text-sm sm:text-base text-[#666666]">
+                    /mo
+                  </span>
                 </div>
 
                 <div className="text-xs sm:text-sm flex items-center gap-1.5 sm:gap-2.5 font-medium">
+                  {/* vCPU */}
                   <div className="sm:flex-row flex flex-col justify-center items-center md:gap-1">
                     <span>{plan.specs.vCPU}</span>
                     <span>vCPU</span>
@@ -75,6 +81,7 @@ const PricingCards = () => {
                 </div>
               </div>
 
+              {/* select button */}
               <div
                 className={`w-5 h-5 rounded-full  flex items-center justify-center ${
                   selectedPlan === plan.id
