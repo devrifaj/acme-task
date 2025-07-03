@@ -6,7 +6,7 @@ import PricingCards from "./PricingCards";
 
 const OurPricing = () => {
   return (
-    <section className="pt-[65px] pb-12 sm:px-4 md:px-8 border border-[#EBEBEB] border-t-0 relative -mt-[1px]">
+    <section className="pt-[70px] pb-12 sm:px-4 md:px-8 border border-[#EBEBEB] border-t-0 relative -mt-[1px]">
       <div className="flex lg:flex-row flex-col items-center lg:gap-8">
         {/* pricing cards */}
         <div className="md:flex-1 w-full">
@@ -14,7 +14,7 @@ const OurPricing = () => {
         </div>
 
         {/* server details card */}
-        <div className="max-w-[530px] lg:max-w-[320px] xl:max-w-[356px] w-full bg-white rounded-xl shadow-pricing px-6.5 pt-[20px] pb-[20px] h-full mt-15">
+        <div className="max-w-[530px] lg:max-w-[320px] xl:max-w-[356px] w-full bg-white rounded-xl shadow-pricing px-6.5 pt-[15px] pb-[23px] h-full mt-15">
           {/* logo */}
           <Link href="/" className="flex">
             <Image src="/logo.svg" alt="Logo" width={53} height={53} />
@@ -29,7 +29,7 @@ const OurPricing = () => {
           </Link>
 
           {/* pricing features */}
-          <div className="mt-8 mb-6 flex flex-col gap-2.5">
+          <div className="mt-7 mb-6 flex flex-col gap-2.5">
             {pricingFeatures.map((feature, index) => (
               <div key={index} className="flex items-center gap-[7px]">
                 <feature.icon />
@@ -43,7 +43,7 @@ const OurPricing = () => {
           {/* pricing button */}
           <Link
             href="#"
-            className="bg-[#171717] text-white rounded-md py-2.5 px-3 flex items-center justify-between lg:mx-2"
+            className="bg-[#171717] text-white rounded-md py-[9px] px-2 flex items-center justify-between lg:mx-2.5"
           >
             Deploy Server
             <ArrowRightLarge />
@@ -52,7 +52,7 @@ const OurPricing = () => {
       </div>
 
       {/* promotion text */}
-      <p className="text-sm text-gray-500 text-center mt-7">
+      <p className="text-sm text-gray-500 text-center mt-6.5">
         *All pricing is in USD and renews automatically unless cancelled.{" "}
       </p>
 
