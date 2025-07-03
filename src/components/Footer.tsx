@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="overflow-hidden">
       <div className="wrapper relative">
-        <div className="md:grid md:grid-cols-3 flex flex-col items-between h-full pt-6 gap-4 border border-[#EBEBEB] border-t-0 relative">
+        <div className="md:grid md:grid-cols-3 flex flex-col items-between h-full md:pt-0 pt-6 gap-4 border border-[#EBEBEB] border-t-0 relative">
           {/* footer left start */}
           {/* this is empty div for bg styling */}
           <div className="md:block hidden"></div>
@@ -13,7 +13,7 @@ const Footer = () => {
 
           {/* footer left text */}
           <div className="md:absolute md:left-8 lg:left-12 md:top-8 lg:top-[50px] md:bottom-12 md:text-left text-center mx-auto max-w-[400px] lg:max-w-[520px] mt-auto ">
-            <h2 className="text-2xl leading-8 tracking-[-0.9px] text-[#666666] font-medium mx-3">
+            <h2 className="text-2xl leading-8 tracking-[-0.9px] text-[#666666] font-medium md:mx-0 mx-3">
               <span className="font-semibold text-[#171717]">
                 Ready to profit?
               </span>{" "}
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
 
           {/* footer right */}
-          <div className="max-w-[358px] w-full py-6 lg:py-12 px-4 lg:px-12 md:border-l border-[#EBEBEB] border-dashed mx-auto text-center">
+          <div className="max-w-[358px] w-full py-6 lg:py-12 px-4 lg:px-9.5 md:border-l border-[#EBEBEB] border-dashed mx-auto md:text-left text-center">
             <p className="mb-6 text-[#666666] text-base">
               <span className="font-medium text-[#171717]">Trial acme</span> to
               see how our performance and ease of use through our Control Panel.
