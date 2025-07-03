@@ -45,9 +45,9 @@ const PricingCards = () => {
             }`}
           >
             <div className="flex items-center justify-between">
-              <div className="flex items-center justify-center gap-3 sm:gap-8 md:gap-[46px] lg:gap-7 xl:gap-[46px]">
+              <div className="flex items-center justify-center gap-3 sm:gap-8 md:gap-[46px] lg:gap-7 xl:gap-[51px]">
                 {/* price */}
-                <div className="flex items-baseline gap-1">
+                <div className="flex items-baseline gap-1 xl:pl-5">
                   <span className="text-[20px] sm:text-2xl md:text-[32px] font-bold text-gray-900">
                     ${plan.price}
                   </span>

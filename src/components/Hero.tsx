@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="grid-item-class border-t-0 border-r-0"></div>
           {/* hero card */}
           <div className="grid-item-class col-span-10 row-span-3 w-full h-full flex-col flex-center lg:border border-0">
-            <h1 className="text-[24px] leading-[26px] sm:text-4xl sm:leading-10 md:text-[40px] md:leading-12 font-medium text-center text-[#666666] tracking-[-2.1px]">
+            <h1 className="text-[24px] leading-[26px] sm:text-4xl sm:leading-10 md:text-[40px] md:leading-12 font-medium text-center text-[#666666] tracking-[-2.3px]">
               <span className="font-semibold text-[#171717]">Lorem Ipsum.</span>{" "}
               Testing, testing, <br /> and testing on our fast, low latency
               hardware.

@@ -13,7 +13,7 @@ const Footer = () => {
 
           {/* footer left text */}
           <div className="md:absolute md:left-8 lg:left-12 md:top-8 lg:top-[51px] md:bottom-12 md:text-left text-center mx-auto max-w-[400px] lg:max-w-[520px] mt-auto ">
-            <h2 className="text-2xl leading-8 tracking-[-0.9px] text-[#666666] font-medium md:mx-0 mx-3">
+            <h2 className="text-2xl leading-[34px] tracking-[-0.8px] text-[#666666] font-medium md:mx-0 mx-3">
               <span className="font-semibold text-[#171717]">
                 Ready to profit?
               </span>{" "}
@@ -26,7 +26,7 @@ const Footer = () => {
             </h2>
 
             {/* footer left link */}
-            <div className="mt-6.5 flex sm:flex-row flex-col items-center md:justify-start justify-center gap-4">
+            <div className="mt-5.5 flex sm:flex-row flex-col items-center md:justify-start justify-center gap-4">
               <Link
                 href="#"
                 className="bg-foreground text-sm font-medium text-white rounded-md py-2.5 px-4 inline-block shadow-footer-button"
@@ -45,7 +45,7 @@ const Footer = () => {
 
           {/* footer right */}
           <div className="max-w-[358px] w-full py-6 lg:py-12 px-4 lg:px-9.5 md:border-l border-[#EBEBEB] border-dashed mx-auto md:text-left text-center">
-            <p className="mb-6 text-[#666666] text-base">
+            <p className="mb-5.5 text-[#666666] text-base leading-[25px] tracking-[0.1px]">
               <span className="font-medium text-[#171717]">Trial acme</span> to
               see how our performance and ease of use through our Control Panel.
             </p>
