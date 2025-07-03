@@ -9,7 +9,7 @@ const HeaderNotification = () => {
 
         <Link
           href="#"
-          className="flex items-center gap-2 border-l border-[#FFFFFF33] pl-3 -mr-1"
+          className="flex items-center gap-2 border-l border-[#FFFFFF33] pl-4 -mr-1"
         >
           Read more <PlayIcon />
         </Link>
